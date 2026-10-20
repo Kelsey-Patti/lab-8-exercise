@@ -1,0 +1,9 @@
+1. The best data field to move out into a separate component type would be the BasicTransform. There
+   other objects that could be transformed and it may be useful to be able to apply these methods to 
+   points and vectors not associated with a sprite. 
+
+2. It means we would have to be sort the sprites in the correct order such that the more translucent
+   sprites are rendered last while the opaque sprites are rendered first. If rendered in the wrong 
+   order, sprites that have more opaque sections may cover up sprites that have more translucent 
+   sections.
+
